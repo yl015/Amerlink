@@ -18,8 +18,7 @@ based on laravel 5.6 and angularjs 1.6.9.
   * The easy way will be that install WAMP/XAMP on windows operation system or MAMP on MAC.
   * This project do require some basic knowledge about git.
 #### Frontend part:
- * All files are located in frontend folder. You should mainly focus on the html and js files but you are encouraged to create good user interfaces by applying css.
- * It is not necessary for you to install additional libraries for the frontend part, but you can include any libraries as you want. 
+ * All front end files are located in backend/public/ directory
  #### Backend part:
 * After downloading the project, firstly you should create the .env file at the backend directory, and copy everything from .env.example file then change 
     ~~~~
@@ -34,8 +33,12 @@ based on laravel 5.6 and angularjs 1.6.9.
  * Navigate to backend folder and run `composer install` to install all dependcies which laravel framework requires.
  * Then run `php artisan migrate` to define all the tables on mysql database.
  * Finally run `php artisan db:seed --class=TodoSeeder` to load some dummy data.
- * All routes, model, and controller are predefined  and loaded for you. You can only focus on implementing REST API inside TOdoController.
  * You can run `php artisan route:list` to see all predefined routes.
- * PS: all php artisan command should be ran at backend directory. Because the artisan file is located at backend directory.
+ 
+
+#### Starting the server
+* cd backend
+* Run `php artisan serve`
+* Open browser and navigate to 127.0.0.1:8000
  
 #### Good luck
